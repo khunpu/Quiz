@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="myStyles.css"
+    <link rel="stylesheet" href="myStyles.css">
 </head>
 <body>
     <h1>QUIZ</h1>
@@ -15,7 +15,8 @@
         <button class="button" onclick="checkAnswer1('b')">ข.ปิ๋ม</button>
         <button class="button" onclick="checkAnswer1('c')">ค.พิม</button>
         <button class="button" onclick="checkAnswer1('d')">ง.ภีม</button>
-        <p id="result1"></p><p id="mark1"></p>
+        <p id="result1"></p>
+        <!-- <p id="mark1"></p> -->
     </div>
     <br>
     <div class="quiz-container">
@@ -24,13 +25,12 @@
         <button class="button" onclick="checkAnswer2('b')">ข.CP ALL Co</button>
         <button class="button" onclick="checkAnswer2('c')">ค.CP ALL Co Ltd</button>
         <button class="button" onclick="checkAnswer2('d')">ง.CP ALL PCL</button>
-        <p id="result2"></p><p id="mark2"></p>
+        <p id="result2"></p>
+        <!-- <p id="mark2"></p> -->
     </div>
     <br>
-    <!-- <p id="mark1"></p> + <p id="mark2"></p> =  -->
     
-    <!-- <button class="button" onclick="markResult(checkAnswer1(),checkAnswer2())">ตรวจสอบ</button> -->
-    <p id="mark" onclick="markResult()"></p>
+    <p id="score"></p>
  
     <script src="index.js" charset="UTF-8"></script>
 </body>

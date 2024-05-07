@@ -11,10 +11,10 @@ function checkAnswer1(answer) {
         result.style.color = 'red';
     }
 
-    calculateScore(score);
- }
+    calculateScore();
+}
 
- // ฟังก์ชันเช็คคำตอบของคำถามที่ 2
+// ฟังก์ชันเช็คคำตอบของคำถามที่ 2
 function checkAnswer2(answer) {
     const result = document.getElementById('result2');
     let score = 0;
@@ -27,18 +27,15 @@ function checkAnswer2(answer) {
         result.style.color = 'red';
     }
 
-    calculateScore(score);
+    calculateScore();
 }
 
 // ฟังก์ชันคำนวณคะแนน
-function calculateScore(score) {   
-    let totalScore = parseInt(document.getElementById('mark').innerText) || 0;
-    totalScore += score;
+function calculateScore() {
+    let score1 = document.getElementById('result1').style.color === 'green' ? 1 : 0;
+    let score2 = document.getElementById('result2').style.color === 'green' ? 1 : 0;
+    let totalScore = score1 + score2;
 
-    document.getElementById("mark").innerHTML = "ตอบถูกทั้งหมด : " +totalScore+ " ข้อ";
-
+    document.getElementById("score").innerHTML = "คะแนนทั้งหมด : " + totalScore + " ข้อ";
 }
 
-
-
- 
